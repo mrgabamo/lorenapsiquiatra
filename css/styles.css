@@ -535,6 +535,13 @@ progress {
   }
 }
 
+@media only screen and (max-width: 800px) {
+  #draw {
+    display: none;
+    visibility: hidden;
+  }
+}
+
 .display-5 {
   font-size: calc(1.425rem + 2.1vw);
   font-weight: 300;

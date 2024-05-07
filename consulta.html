@@ -16,6 +16,17 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <!-- Script Hide on Mobile-->
+        <script type="text/javascript">
+        function fixBar() {
+          if (window.innerWidth < 4000px) {
+            document.getElementById("draw").style.visibility = "hidden";
+          } else {
+            document.getElementById("draw").style.visibility = "visible";
+          }
+        }
+        </script>
+        <!-- Script Hide on Mobile-->
     </head>
     <body class="d-flex flex-column h-100 bg-light">
         <main class="flex-shrink-0">
@@ -48,10 +59,18 @@
                                 <div class="card-body p-0">
                                     <div class="d-flex align-items-center">
                                         <div class="p-5">
-                                            <h2 class="fw-bolder">Atendimento online</h2>
-                                            <p>Texto sobre a facilidade e praticidade de fazer a consulta online. Um breve descritivo da dinâmica de atendimento.</p>
+                                            <h2 class="fw-bolder fs-1">Telemedicina</h2>
+                                            <p class="fs-2 mb-0 text-gradient"><b>Consulta Online</b></p>
+                                            <p class="text-muted fs-5">Praticidade e Flexibilidade.</p>
+                                            <p>Atendimento via <b>Videoconferência</b> pelo seu smartphone, tablet ou computador. <b>Onde e como quiser!</b></p>
+                                            <!-- Download resume button-->
+                                            <!-- Note: Set the link href target to a PDF file within your project-->
+                                            <a class="btn bg-gradient-primary-to-secondary text-white px-4 py-3" href="https://www.doctoralia.com.br/lorena-abrao-silva/" target="_blank">
+                                                <h2 class="fs-5 my-1"><div class="d-inline-block text-white fw-bolder bi bi-person-video me-2"></div>
+                                                <b>Agendar Consulta</b></h2>
+                                            </a>
                                         </div>
-                                        <img class="img-fluid" src="assets/online.webp" alt="..." />
+                                        <div id="draw"><img class="img-fluid" src="assets/online.webp"/></div>
                                     </div>
                                 </div>
                             </div>
@@ -59,11 +78,24 @@
                             <div class="card overflow-hidden shadow rounded-4 border-0">
                                 <div class="card-body p-0">
                                     <div class="d-flex align-items-center">
-                                        <div class="p-5">
-                                            <h2 class="fw-bolder">Atendimento presencial</h2>
-                                            <p>Texto sobre o consultório e a localidade. Um breve descritivo da dinâmica de atendimento.</p>
+                                        <div class="col-xl-6 p-5">
+                                            <h2 class="fw-bolder fs-4"><b>Atendimento Presencial</b></h2>
+                                            <p class="fs-4 text-muted mb-0">Cêntro Médico Fêmina</p>
+                                            <p class="fs-5 text-secondary"><b>Setor Marista, Goiânia-GO</b></p>
+                                            <p class="mb-0">Al. Coronel Joaquim de Bastos, 170</p>
+                                            <p>Entre a <b>Av. 85</b> e o <b>Parque Areião</b>.</p>
+                                            <p>Para pacientes que não se importam com deslocamento e preferem ser atendidos em consultório presencialmente.</p>
+                                            <!-- Download resume button-->
+                                            <!-- Note: Set the link href target to a PDF file within your project-->
+                                            <a class="btn bg-gradient-primary-to-secondary text-white px-4 py-3" href="https://www.doctoralia.com.br/lorena-abrao-silva/" target="_blank">
+                                                <h2 class="fs-5 my-1"><div class="d-inline-block text-white fw-bolder bi bi-calendar2-week me-2"></div>
+                                                <b>Marcar Consulta</b></h2>
+                                            </a>
                                         </div>
-                                        <img class="img-fluid" src="assets/presencial.png" alt="..." />
+                                        <div class="col-xxl-5" id="draw">
+                                            <img class="img-fluid mb-2 my-4 mx-1" src="assets/presencial.png" href="" alt="Abrir localização no GoogleMaps"/>
+                                            <iframe class="mb-5" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3821.365684444047!2d-49.262524899999995!3d-16.708596000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ef118c8831ce5%3A0x8b23612eef6221c7!2sFemina%20Medical%20Center!5e0!3m2!1sen!2sbr!4v1715053978490!5m2!1sen!2sbr" width="360" height="180" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
