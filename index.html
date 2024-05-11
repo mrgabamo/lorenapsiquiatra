@@ -32,7 +32,17 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <!-- Add icon library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
+    <style>
+    .fa {
+        color: lightgray;
+    }
+    .checked {
+        color: text-gold;
+    }
+    </style>
     <body class="d-flex flex-column h-100">
         <main class="flex-shrink-0">
             <!-- Navigation-->
@@ -66,7 +76,7 @@
                                 <h1 class="display-3 fw-bolder mb-5"><span class="text-gradient d-inline">cuidando de pessoas ❤️</span></h1>
                                 <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xxl-start mb-3">
                                     <a class="btn btn-primary btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder" href="agendamento.html">Agendar Consulta</a>
-                                    <a class="btn btn-outline-dark btn-lg px-5 py-3 fs-6 fw-bolder" href="tratamentos.html">Tratamentos</a>
+                                    <a class="btn btn-outline-dark text-gradient btn-lg px-5 py-3 fs-6 fw-bolder" href="tratamentos.html">Tratamentos</a>
                                 </div>
                             </div>
                         </div>
@@ -195,12 +205,57 @@
                     </div>
                 </div>
             </header>
+            <!-- Rating Section-->
+            <section class="bg-light py-5">
+                <div class="container px-5">
+                    <div class="row gx-5 justify-content-center">
+                        <div class="col-xxl-8">
+                            <div class="text-secondary my-2">
+                                <h2 class="display-5 fw-bolder"><span class="text-gradient d-inline">Feedback Pacientes</span></h2>
+                                <p class="lead fw-bolder mb-4">Veja a opinião dos meus pacientes.</p>
+                                <!-- Feedback 1 -->
+                                <p class="text-muted fw-bolder mb-0"><b>Paciente TDAH</b>
+                                &nbsp;
+                                <span class="fa fa-star text-gradient"></span>
+                                <span class="fa fa-star text-gradient"></span>
+                                <span class="fa fa-star text-gradient"></span>
+                                <span class="fa fa-star text-gradient"></span>
+                                <span class="fa fa-star text-gradient"></span>
+                                </p>
+                                <p class="text-muted small mb-4">A Dra. Lorena mudou minha vida, deixei de sofrer com as dificuldades de concentração graças ao medicamento para TDAH. Adorei a possibilidade de escolher entre o tratamento convencional e com CBD. Sem dúvidas o melhor tratamento que já tive!</p>
+                                <!-- Feedback 2 -->
+                                <p class="text-muted fw-bolder mb-0"><b>Paciente Ansioso</b>
+                                &nbsp;
+                                <span class="fa fa-star text-gradient"></span>
+                                <span class="fa fa-star text-gradient"></span>
+                                <span class="fa fa-star text-gradient"></span>
+                                <span class="fa fa-star text-gradient"></span>
+                                <span class="fa fa-star text-gradient"></span>
+                                </p>
+                                <p class="text-muted small mb-4">A Dra. Lorena mudou minha vida, deixei de sofrer com as dificuldades de concentração graças ao medicamento para Ansiedade. Adorei a possibilidade de escolher entre o tratamento convencional e com CBD. Sem dúvidas o melhor tratamento que já tive!</p>
+                                <!-- Feedback 3 -->
+                                <p class="text-muted fw-bolder mb-0"><b>Paciente Bipolar</b>
+                                &nbsp;
+                                <span class="fa fa-star text-gradient"></span>
+                                <span class="fa fa-star text-gradient"></span>
+                                <span class="fa fa-star text-gradient"></span>
+                                <span class="fa fa-star text-gradient"></span>
+                                <span class="fa fa-star text-gradient"></span>
+                                </p>
+                                <p class="text-muted small mb-4">A Dra. Lorena mudou minha vida, deixei de sofrer com as dificuldades de concentração graças ao medicamento para bipolaridade. Adorei a possibilidade de escolher entre o tratamento convencional e com CBD. Sem dúvidas o melhor tratamento que já tive!</p>
+                                <!-- Btn ver mais -->
+                                <a class="btn btn-outline-dark text-gradient btn-lg fs-6 fw-bolder" href="feedback.html">Ver mais</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <!-- About Section-->
             <section class="bg-light py-5">
                 <div class="container px-5">
                     <div class="row gx-5 justify-content-center">
                         <div class="col-xxl-8">
-                            <div class="text-secondary my-5">
+                            <div class="text-secondary my-2">
                                 <h2 class="display-5 fw-bolder"><span class="text-gradient d-inline">Psiquiatria e saúde mental</span></h2>
                                 <p class="lead fw-bolder mb-4">A sua saúde mental não precisa ser um mistério.</p>
                                 <p class="text-muted">
@@ -213,7 +268,7 @@
                                     Entender a <b>saúde mental</b> como algo que <b>envolve o corpo, as emoções e a forma como interagimos</b> ajuda a ver que todos têm um papel importante em <b>cuidar do bem-estar de todos</b>, cuidando de nós mesmos e apoiando uns aos outros.
                                 </p>
                                 <br><br>
-                                <h2 id="FAQ" class="display-5 fw-bolder mb-4"><span class="text-gradient d-inline">Perguntas Frequentes</span></h2>
+                                <h2 id="FAQ" class="display-5 fw-bolder mb-4 my-5"><span class="text-gradient d-inline">Perguntas Frequentes</span></h2>
                                 <p class="lead fw-bolder mb-2">Quando devo procurar a ajuda de um psiquiatra?</p>
                                 <p class="text-muted">
                                     Você deve considerar buscar ajuda se estiver enfrentando dificuldades de sono, irritabilidade ou tristeza excessivas, pensamentos de morte, descontrole com gastos, bem como outras alterações que impactem na qualidade de vida.
