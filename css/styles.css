@@ -11739,3 +11739,9 @@ html {
     left: -2vw;
   }
 }
+
+
+iframe {
+    height: calc(100% - 8px);
+    overflow: hidden;
+}
