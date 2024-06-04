@@ -11741,7 +11741,7 @@ html {
 }
 
 
-iframe {
+.modal iframe {
     height: calc(100% - 8px);
     overflow: hidden;
 }
