@@ -66,10 +66,10 @@
                                             <p>Atendimento via <b>Videoconferência</b> pelo seu smartphone, tablet ou computador. <b>Onde e como quiser!</b></p>
                                             <!-- Download resume button-->
                                             <!-- Note: Set the link href target to a PDF file within your project-->
-                                            <button class="btn bg-gradient-primary-to-secondary text-white px-4 py-3" href="https://wa.me/5562996722188" data-bs-toggle="modal" data-bs-target="#modal2">
+                                            <a class="btn bg-gradient-primary-to-secondary text-white px-4 py-3" href="https://wa.me/5562996722188" target="_blank">
                                                 <h2 class="fs-5 my-1"><div class="d-inline-block text-white fw-bolder bi bi-person-video me-2"></div>
                                                 <b>Agendar Consulta</b></h2>
-                                            </button>
+                                            </a>
                                         </div>
                                         <div id="draw"><img class="img-fluid" src="assets/online.webp"/></div>
                                     </div>
@@ -88,10 +88,10 @@
                                             <p>Para pacientes que não se importam com deslocamento e preferem ser atendidos em consultório presencialmente.</p>
                                             <!-- Download resume button-->
                                             <!-- Note: Set the link href target to a PDF file within your project-->
-                                            <button class="btn bg-gradient-primary-to-secondary text-white px-4 py-3" href="https://wa.me/5562996722188" data-bs-toggle="modal" data-bs-target="#modal">
+                                            <a class="btn bg-gradient-primary-to-secondary text-white px-4 py-3" href="https://wa.me/5562996722188" target="_blank">
                                                 <h2 class="fs-5 my-1"><div class="d-inline-block text-white fw-bolder bi bi-calendar2-week me-2"></div>
                                                 <b>Marcar Consulta</b></h2>
-                                            </button>
+                                            </a>
                                         </div>
                                         <div class="col-xxl-5" id="draw">
                                             <img class="img-fluid mb-2 my-4 mx-1" src="assets/presencial.png" href="" alt="Abrir localização no GoogleMaps"/>
@@ -134,51 +134,5 @@
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
         
-        <div class="modal fade modal-xl" id="modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Agende sua consulta</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    
-                    <div class="modal-body p-0">
-                        <iframe style="width: 100%"></iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="modal fade modal-xl" id="modal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Agende sua consulta</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    
-                    <div class="modal-body p-0">
-                        <iframe style="width: 100%"></iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
-          
-        <script>
-            const modalAssert = function(e) {
-                const target = e.relatedTarget
-                const scheduleUrl = target.dataset.url
-                const modal = e.target
-                /** @type {HTMLIFrameElement} */
-                const iframe = modal.getElementsByTagName('iframe')[0]
-
-                if(!iframe.src) {
-                    iframe.src = scheduleUrl
-                }
-            }
-            
-            document.getElementById('modal').addEventListener('show.bs.modal', modalAssert)            
-            document.getElementById('modal2').addEventListener('show.bs.modal', modalAssert)
-        </script>
     </body>
 </html>

@@ -11739,9 +11739,3 @@ html {
     left: -2vw;
   }
 }
-
-
-.modal iframe {
-    height: calc(100% - 8px);
-    overflow: hidden;
-}
